@@ -2,11 +2,13 @@
   "name": "react-redux-realworld-example-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bmendez0428.github.io/ThinksterReactJS",
   "devDependencies": {
     "cross-env": "^5.1.4",
-    "react-scripts": "1.1.1"
+    "react-scripts": "^2.1.8"
   },
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "history": "^4.6.3",
     "marked": "^0.3.6",
     "prop-types": "^15.5.10",
@@ -26,6 +28,14 @@
     "start": "cross-env PORT=4100 react-scripts start",
     "build": "react-scripts build",
     "test": "cross-env PORT=4100 react-scripts test --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
